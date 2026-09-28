@@ -16,14 +16,14 @@ const educationData = [
     degree: '12th Standard (HSC)',
     institution: 'Bishop Ubagaraswamy Higher Secondary School',
     timeline: 'Passed Out 2024',
-    score: '68.83%',
+    score: null,
   },
   {
     level: 'Secondary School',
     degree: '10th Standard (SSLC)',
     institution: 'Bishop Ubagaraswamy Higher Secondary School',
     timeline: 'Passed Out 2022',
-    score: '67.20%',
+    score: null,
   },
 ];
 
