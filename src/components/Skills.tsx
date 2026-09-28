@@ -118,20 +118,20 @@ const Skills: React.FC = () => {
             aria-hidden="true"
           >
             <defs>
-              {/* Glow filter */}
-              <filter id="sk-glow" x="-30%" y="-30%" width="160%" height="160%">
-                <feGaussianBlur stdDeviation="3" result="blur" />
+              {/* Subtle glow filter — low-intensity bloom only */}
+              <filter id="sk-glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="1.2" result="blur" />
                 <feMerge>
                   <feMergeNode in="blur" />
                   <feMergeNode in="SourceGraphic" />
                 </feMerge>
               </filter>
 
-              {/* Gradient along the line */}
+              {/* Soft gradient along the line */}
               <linearGradient id="sk-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%"   stopColor="#c8ff00" stopOpacity="0.9" />
-                <stop offset="60%"  stopColor="#c8ff00" stopOpacity="0.6" />
-                <stop offset="100%" stopColor="#c8ff00" stopOpacity="0.85" />
+                <stop offset="0%"   stopColor="#c8ff00" stopOpacity="0.45" />
+                <stop offset="60%"  stopColor="#c8ff00" stopOpacity="0.28" />
+                <stop offset="100%" stopColor="#c8ff00" stopOpacity="0.38" />
               </linearGradient>
             </defs>
 
@@ -351,8 +351,8 @@ const Skills: React.FC = () => {
         }
         .cat-anchor-dot.lit {
           background: var(--accent);
-          box-shadow: 0 0 10px rgba(200,255,0,0.9), 0 0 20px rgba(200,255,0,0.5);
-          transform: scale(1.4);
+          box-shadow: 0 0 5px rgba(200,255,0,0.35);
+          transform: scale(1.3);
         }
 
         /* Skill tag matrix */
@@ -402,10 +402,10 @@ const Skills: React.FC = () => {
 
         /* Connected / active — subtle highlight, not overpowering */
         .skill-tag-box.active-tag {
-          background: rgba(200,255,0,0.04);
-          border: 1px solid rgba(200,255,0,0.5);
-          color: rgba(255,255,255,0.92);
-          box-shadow: 0 0 10px rgba(200,255,0,0.1);
+          background: rgba(200,255,0,0.025);
+          border: 1px solid rgba(200,255,0,0.28);
+          color: rgba(255,255,255,0.88);
+          box-shadow: none;
           transform: translateY(-1px);
         }
 
