@@ -32,15 +32,10 @@ const About: React.FC = () => {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           >
             <p style={{ fontSize: '1.05rem', color: 'var(--text)', lineHeight: 1.75, marginBottom: '1.25rem' }}>
-              I'm an Artificial Intelligence and Data Science engineering student
-              interested in building practical AI applications and intelligent
-              automation systems.
+              Engineering student specializing in Artificial Intelligence and Data Science with a hands-on interest in Agentic AI, Large Language Models (LLMs), RAG, CAG, MAG, AI automation, full-stack web development and MERN-stack applications.
             </p>
             <p style={{ fontSize: '0.95rem', color: 'var(--text-2)', lineHeight: 1.8 }}>
-              My focus is on Large Language Models, Retrieval-Augmented Generation,
-              AI automation and workflow-driven applications. I enjoy transforming
-              ideas into useful technical products and continuously experimenting
-              with emerging AI technologies.
+              I enjoy building practical solutions across intelligent job platforms, document-based AI systems, automated workflows, and interactive web applications.
             </p>
           </motion.div>
 

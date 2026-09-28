@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Focus from './components/Focus';
 import ProfessionalSkills from './components/ProfessionalSkills';
@@ -20,6 +21,7 @@ const App: React.FC = () => {
         <Hero />
         <About />
         <Skills />
+        <Experience />
         <Projects />
         <Focus />
         <ProfessionalSkills />

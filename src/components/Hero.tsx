@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
         >
           {/* Label */}
           <motion.p variants={itemVariants} className="label" style={{ marginBottom: '2.5rem' }}>
-            AI Developer / AI Automation
+            AI Developer • Agentic AI • Full-Stack & MERN • AI Automation
           </motion.p>
 
           {/* Main Heading */}

@@ -5,10 +5,11 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: "AI & LLM",
+    category: "AI & AGENTIC AI",
     skills: [
-      "Large Language Models (LLMs)",
-      "Natural Language Processing (NLP)",
+      "Agentic AI",
+      "LLMs",
+      "NLP",
       "RAG",
       "CAG",
       "MAG",
@@ -16,26 +17,27 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    category: "Development",
+    category: "FULL-STACK",
+    skills: [
+      "MERN Stack",
+      "Full-Stack Web Development",
+    ],
+  },
+  {
+    category: "PROGRAMMING",
     skills: [
       "Python",
       "SQL",
-      "API & Tool Integration",
-      "AI Application Development",
     ],
   },
   {
-    category: "Automation",
+    category: "AUTOMATION & INFRA",
     skills: [
       "n8n",
       "AI Automation",
-      "Workflow Automation",
-      "Workflow Design & Optimization",
+      "Docker",
+      "API Integration",
     ],
-  },
-  {
-    category: "Infrastructure",
-    skills: ["Docker"],
   },
 ];
 

@@ -15,7 +15,7 @@ export const projects: Project[] = [
     title: "JOBINTEL",
     subtitle: "AI-Powered Job Intelligence Platform",
     description:
-      "An intelligent job platform focused on organizing and presenting job information clearly and consistently.",
+      "Developing an intelligent job platform focused on organizing and presenting job information clearly and consistently. Designing structured company branding and logo resolution to improve the consistency and quality of job-related data.",
     highlights: [
       "Job intelligence",
       "Structured job information",
@@ -31,7 +31,7 @@ export const projects: Project[] = [
     title: "RAG-BASED DOCUMENT ASSISTANT",
     subtitle: "Retrieval-Augmented Question Answering",
     description:
-      "A document question-answering application that enables users to upload documents and receive context-aware answers based on relevant content.",
+      "Exploring a document question-answering application that enables users to upload documents for analysis and retrieve relevant content for context-aware answers.",
     highlights: [
       "Document analysis",
       "Retrieval",
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     title: "AI AUTOMATION WORKFLOWS",
     subtitle: "Intelligent Process Automation",
     description:
-      "Automated workflows combining n8n and AI capabilities to streamline repetitive tasks and improve workflow efficiency.",
+      "Developing automated workflows using n8n combined with AI capabilities to streamline repetitive tasks and improve workflow efficiency.",
     highlights: [
       "n8n",
       "AI automation",
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     title: "3D INTERIOR VISUALIZATION PLATFORM",
     subtitle: "Interactive Web-Based 3D Design",
     description:
-      "An interactive 3D interior visualization platform supporting real-time model interaction and customization.",
+      "Contributed to an interactive 3D interior visualization platform featuring real-time model interaction and customization.",
     highlights: [
       "Interactive 3D visualization",
       "Real-time customization",
