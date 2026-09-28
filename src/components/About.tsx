@@ -131,7 +131,15 @@ const About: React.FC = () => {
 
       <style>{`
         @media (max-width: 768px) {
-          .about-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+          .about-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2.5rem !important;
+          }
+        }
+        @media (max-width: 480px) {
+          .about-grid > div:nth-child(2) > div:first-child {
+            max-height: 280px !important;
+          }
         }
       `}</style>
     </section>

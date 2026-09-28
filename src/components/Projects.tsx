@@ -129,16 +129,22 @@ const Projects: React.FC = () => {
         @media (max-width: 768px) {
           .project-card-row {
             grid-template-columns: 60px 1fr !important;
-            gap: 1rem !important;
+            gap: 1.25rem !important;
+            padding: 1.75rem 0 !important;
           }
           .project-card-row > div:last-child {
-            grid-column: 1 / -1;
+            grid-column: 2 / 3;
           }
         }
         @media (max-width: 480px) {
           .project-card-row {
             grid-template-columns: 1fr !important;
+            gap: 0.75rem !important;
           }
+          .project-card-row > div:last-child {
+            grid-column: 1 / -1;
+          }
+          .project-number-col { display: none !important; }
         }
       `}</style>
     </section>

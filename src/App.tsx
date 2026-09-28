@@ -10,11 +10,13 @@ import Focus from './components/Focus';
 import ProfessionalSkills from './components/ProfessionalSkills';
 import Education from './components/Education';
 import Contact from './components/Contact';
+import CustomCursor from './components/CustomCursor';
 import Footer from './components/Footer';
 
 const App: React.FC = () => {
   return (
     <>
+      <CustomCursor />
       <div className="noise-overlay" />
       <Navbar />
       <main>

@@ -193,6 +193,15 @@ const Navbar: React.FC = () => {
           .desktop-nav { display: none !important; }
           .hamburger { display: flex !important; }
         }
+        @media (max-width: 360px) {
+          .navbar .container { padding: 0 1rem; }
+          .navbar a[href="#"] { font-size: 0.8rem; }
+        }
+        /* Mobile menu full height */
+        .mobile-menu-overlay {
+          min-height: 100dvh;
+          min-height: 100vh;
+        }
       `}</style>
     </>
   );

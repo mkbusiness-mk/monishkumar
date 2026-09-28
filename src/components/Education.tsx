@@ -123,8 +123,14 @@ const Education: React.FC = () => {
       </div>
 
       <style>{`
-        @media (max-width: 480px) {
+        .edu-card { min-width: 0; }
+        @media (max-width: 640px) {
           .edu-card { gap: 1rem !important; }
+        }
+        @media (max-width: 480px) {
+          .edu-card { gap: 0.75rem !important; }
+          .edu-card h3 { font-size: 1rem !important; }
+          .edu-card p { font-size: 0.82rem !important; }
         }
       `}</style>
     </section>

@@ -111,11 +111,18 @@ const Focus: React.FC = () => {
       <style>{`
         @media (max-width: 900px) {
           .focus-grid { grid-template-columns: repeat(2, 1fr) !important; }
-          .focus-grid > div { border-right: none !important; border-bottom: 1px solid var(--border); }
-          .focus-grid > div:last-child { border-bottom: none; }
+          .focus-grid > div {
+            border-right: none !important;
+            border-bottom: 1px solid var(--border);
+          }
+          .focus-grid > div:nth-child(odd) { border-right: 1px solid var(--border) !important; }
+          .focus-grid > div:nth-last-child(-n+2) { border-bottom: none; }
         }
         @media (max-width: 500px) {
           .focus-grid { grid-template-columns: 1fr !important; }
+          .focus-grid > div { border-right: none !important; border-bottom: 1px solid var(--border); }
+          .focus-grid > div:last-child { border-bottom: none; }
+          .focus-grid > div { padding: 1.75rem 1.25rem !important; }
         }
       `}</style>
     </section>

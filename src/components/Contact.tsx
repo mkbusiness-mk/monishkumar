@@ -154,6 +154,22 @@ const Contact: React.FC = () => {
           </a>
         </motion.div>
       </div>
+
+      <style>{`
+        @media (max-width: 480px) {
+          #contact .section-header { margin-bottom: 1.5rem; }
+          #contact h3 { word-break: break-word; }
+          #contact a[href] {
+            padding: 1rem !important;
+            gap: 0.75rem !important;
+          }
+          #contact p[style*="ellipsis"] {
+            font-size: 0.78rem !important;
+          }
+          #contact .btn-group { flex-direction: column; }
+          #contact .btn-group .btn { width: 100%; justify-content: center; }
+        }
+      `}</style>
     </section>
   );
 };

@@ -125,7 +125,7 @@ const Hero: React.FC = () => {
           </motion.p>
 
           {/* CTA Buttons */}
-          <motion.div variants={itemVariants} style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
+          <motion.div variants={itemVariants} className="hero-cta-group">
             <button className="btn btn-primary" onClick={scrollToProjects}>
               View Projects
             </button>
@@ -156,17 +156,7 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.4, duration: 0.6 }}
-        style={{
-          position: 'absolute',
-          bottom: '2.5rem',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: '0.4rem',
-          cursor: 'pointer',
-        }}
+        className="hero-scroll-indicator"
         onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
       >
         <span className="label" style={{ fontSize: '0.55rem' }}>Scroll</span>
@@ -177,6 +167,30 @@ const Hero: React.FC = () => {
           <ArrowDown size={14} color="var(--text-3)" />
         </motion.div>
       </motion.div>
+
+      <style>{`
+        .hero-scroll-indicator {
+          position: absolute;
+          bottom: 2.5rem;
+          left: 50%;
+          transform: translateX(-50%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.4rem;
+          cursor: pointer;
+        }
+        .hero-cta-group {
+          display: flex;
+          gap: 0.75rem;
+          flex-wrap: wrap;
+        }
+        @media (max-width: 480px) {
+          .hero-scroll-indicator { bottom: 1.5rem; }
+          .hero-cta-group { gap: 0.5rem; }
+          .hero-cta-group .btn { flex: 1 1 calc(50% - 0.25rem); justify-content: center; }
+        }
+      `}</style>
     </section>
   );
 };

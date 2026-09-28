@@ -59,6 +59,17 @@ const ProfessionalSkills: React.FC = () => {
           ))}
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 480px) {
+          #how-i-work .container > div {
+            grid-template-columns: 1fr !important;
+          }
+          #how-i-work .container > div > div {
+            padding: 1.25rem 1.25rem !important;
+          }
+        }
+      `}</style>
     </section>
   );
 };
